@@ -1,0 +1,116 @@
+/* Olympic Logo Animation */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.ring{
+    position: absolute;
+    top: 25%;
+    left: 33%;
+    width: 180px;
+    height: 180px;
+    margin-left: -5%;
+    border-radius: 50%;
+    border-left: 7px solid blue;
+    border-top: 7px solid blue;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.ring:nth-child(2){
+    position: absolute;
+    top: 35%;
+    left: 42%;
+    animation: animate2 5s linear infinite;
+    animation-delay: -1s;
+    border-top:  7px solid yellow;
+    border-left:  7px solid yellow;
+    border-bottom:  7px solid yellow;
+}
+
+@keyframes animate2{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.ring:nth-child(3){
+    position: absolute;
+    top: 25%;
+    left: 49%;
+    animation: animate3 4s linear infinite;
+    animation-delay: -1s;
+    border-top:  7px solid black;
+    border-left:  7px solid black;
+    border-bottom:  7px solid black;
+}
+
+@keyframes animate3{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.ring:nth-child(4){
+    position: absolute;
+    top: 35%;
+    left: 57%;
+    animation: animate4 4s linear infinite;
+    animation-delay: -1s;
+    border-top:  7px solid green;
+    border-left:  7px solid green;
+    border-bottom: 7px solid green;
+}
+
+@keyframes animate4{
+0%{
+    transform: rotate(-360deg);
+}
+100%{
+    transform: rotate(0deg);
+}
+}
+
+.ring:nth-child(5){
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    animation: animate5 4s linear infinite;
+    animation-delay: -1s;
+    border-top:  7px solid red;
+    border-left:  7px solid red ;
+    border-right:  7px solid red ;
+}
+
+@keyframes animate5{
+    0%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+#logo{
+    width: 100%;
+    height: auto;
+    font-size: 4em;
+    text-align: center;
+    color: rgb(71, 71, 223);
+}
